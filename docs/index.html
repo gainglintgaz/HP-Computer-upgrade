@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HP Computer Upgrade &amp; PC Shopping Guide</title>
+    <style>
+        :root {
+            --bg: #0d1117;
+            --surface: #161b22;
+            --border: #30363d;
+            --text: #e6edf3;
+            --text-muted: #8b949e;
+            --accent: #58a6ff;
+            --green: #3fb950;
+            --orange: #d29922;
+            --red: #f85149;
+            --purple: #bc8cff;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            padding: 0;
+        }
+
+        /* Header */
+        .hero {
+            background: linear-gradient(135deg, #1a1f35 0%, #0d1117 100%);
+            border-bottom: 1px solid var(--border);
+            padding: 2rem 1.5rem;
+            text-align: center;
+        }
+        .hero h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+        .hero p { color: var(--text-muted); font-size: 1rem; }
+        .hero .badge {
+            display: inline-block;
+            background: #1f6feb33;
+            color: var(--accent);
+            padding: 0.25rem 0.75rem;
+            border-radius: 99px;
+            font-size: 0.8rem;
+            margin-top: 0.75rem;
+            border: 1px solid #1f6feb55;
+        }
+
+        /* Navigation tabs */
+        .tabs {
+            display: flex;
+            gap: 0;
+            background: var(--surface);
+            border-bottom: 1px solid var(--border);
+            overflow-x: auto;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .tab {
+            padding: 0.85rem 1.25rem;
+            cursor: pointer;
+            border: none;
+            background: none;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            font-weight: 500;
+            white-space: nowrap;
+            border-bottom: 2px solid transparent;
+            transition: all 0.2s;
+        }
+        .tab:hover { color: var(--text); background: #1f6feb11; }
+        .tab.active { color: var(--accent); border-bottom-color: var(--accent); }
+
+        /* Container */
+        .container { max-width: 1200px; margin: 0 auto; padding: 1.5rem; }
+
+        /* Section */
+        .section { display: none; }
+        .section.active { display: block; }
+
+        /* Cards */
+        .card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.25rem;
+            margin-bottom: 1rem;
+        }
+        .card h3 { color: var(--accent); font-size: 1.1rem; margin-bottom: 0.5rem; }
+        .card p { color: var(--text-muted); font-size: 0.9rem; }
+
+        /* Alert box */
+        .alert {
+            background: #d2992215;
+            border: 1px solid #d2992244;
+            border-left: 4px solid var(--orange);
+            border-radius: 6px;
+            padding: 1rem 1.25rem;
+            margin-bottom: 1.5rem;
+        }
+        .alert strong { color: var(--orange); }
+        .alert p { color: var(--text-muted); margin-top: 0.25rem; font-size: 0.9rem; }
+
+        .tip {
+            background: #3fb95015;
+            border: 1px solid #3fb95044;
+            border-left: 4px solid var(--green);
+            border-radius: 6px;
+            padding: 1rem 1.25rem;
+            margin-bottom: 1.5rem;
+        }
+        .tip strong { color: var(--green); }
+        .tip p { color: var(--text-muted); margin-top: 0.25rem; font-size: 0.9rem; }
+
+        /* Tables */
+        .table-wrap {
+            overflow-x: auto;
+            margin-bottom: 1.5rem;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.85rem;
+        }
+        thead { background: #1c2333; }
+        th {
+            padding: 0.75rem 0.85rem;
+            text-align: left;
+            color: var(--text-muted);
+            font-weight: 600;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+            cursor: pointer;
+            white-space: nowrap;
+            user-select: none;
+            position: relative;
+        }
+        th:hover { color: var(--accent); }
+        th .sort-arrow { margin-left: 4px; font-size: 0.7rem; }
+        td {
+            padding: 0.7rem 0.85rem;
+            border-top: 1px solid var(--border);
+            vertical-align: top;
+        }
+        tr:hover td { background: #1f6feb08; }
+
+        /* Price highlight */
+        .price { color: var(--green); font-weight: 700; white-space: nowrap; }
+        .sale { color: var(--orange); font-weight: 600; }
+        .best-pick {
+            background: #3fb95010;
+            border-left: 3px solid var(--green);
+        }
+
+        /* Tags */
+        .tag {
+            display: inline-block;
+            font-size: 0.7rem;
+            padding: 0.15rem 0.5rem;
+            border-radius: 99px;
+            font-weight: 600;
+            margin-right: 0.25rem;
+        }
+        .tag-deal { background: #3fb95022; color: var(--green); border: 1px solid #3fb95044; }
+        .tag-top { background: #58a6ff22; color: var(--accent); border: 1px solid #58a6ff44; }
+        .tag-warn { background: #f8514922; color: var(--red); border: 1px solid #f8514944; }
+        .tag-club { background: #bc8cff22; color: var(--purple); border: 1px solid #bc8cff44; }
+
+        /* Links */
+        a { color: var(--accent); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+
+        /* Spec grid */
+        .spec-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        .spec-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1rem;
+        }
+        .spec-card h4 { color: var(--accent); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .spec-card .spec-val { color: var(--text); font-size: 1.1rem; font-weight: 600; }
+        .spec-card .spec-note { color: var(--text-muted); font-size: 0.8rem; margin-top: 0.25rem; }
+
+        /* Search bar */
+        .search-bar {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+        }
+        .search-bar input {
+            flex: 1;
+            min-width: 200px;
+            padding: 0.65rem 1rem;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            color: var(--text);
+            font-size: 0.9rem;
+        }
+        .search-bar input:focus { outline: none; border-color: var(--accent); }
+        .search-bar select {
+            padding: 0.65rem 1rem;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            color: var(--text);
+            font-size: 0.9rem;
+        }
+
+        /* Quick links grid */
+        .link-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 0.75rem;
+            margin-bottom: 1.5rem;
+        }
+        .link-card {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 0.85rem 1rem;
+            text-decoration: none !important;
+            transition: border-color 0.2s;
+        }
+        .link-card:hover { border-color: var(--accent); }
+        .link-card .link-icon { font-size: 1.4rem; }
+        .link-card .link-text { font-size: 0.85rem; color: var(--text); }
+        .link-card .link-sub { font-size: 0.75rem; color: var(--text-muted); }
+
+        h2 { font-size: 1.3rem; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--border); }
+        h3.section-sub { font-size: 1.05rem; margin: 1.5rem 0 0.75rem; color: var(--text-muted); }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 1.4rem; }
+            .tab { padding: 0.7rem 0.9rem; font-size: 0.8rem; }
+            .container { padding: 1rem; }
+            table { font-size: 0.78rem; }
+            td, th { padding: 0.5rem; }
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-muted);
+            font-size: 0.8rem;
+            border-top: 1px solid var(--border);
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+<!-- HERO -->
+<div class="hero">
+    <h1>HP Pavilion 590-p0066 Upgrade &amp; PC Shopping Guide</h1>
+    <p>Structured deals from reputable retailers — sorted by price, rating, and reputation</p>
+    <div class="badge">Updated February 2026</div>
+</div>
+
+<!-- TABS -->
+<div class="tabs">
+    <button class="tab active" onclick="showSection('overview')">Overview</button>
+    <button class="tab" onclick="showSection('ssds')">NVMe SSDs</button>
+    <button class="tab" onclick="showSection('ram')">DDR4 RAM</button>
+    <button class="tab" onclick="showSection('pcs')">New PCs</button>
+    <button class="tab" onclick="showSection('warehouse')">Costco / Sam's / BJ's</button>
+    <button class="tab" onclick="showSection('search')">Search Tool</button>
+    <button class="tab" onclick="showSection('specs')">Your HP Specs</button>
+</div>
+
+<div class="container">
+
+<!-- ============================================================ -->
+<!-- OVERVIEW -->
+<!-- ============================================================ -->
+<div class="section active" id="overview">
+    <br>
+    <div class="alert">
+        <strong>Market Alert — February 2026</strong>
+        <p>NAND flash and DRAM prices have surged due to AI datacenter demand. Phison CEO confirmed prices have more than doubled and all 2026 production is sold out. Buy sooner rather than later.</p>
+    </div>
+
+    <h2>Quick Recommendation</h2>
+
+    <div class="tip">
+        <strong>Fastest Fix (~$180): Upgrade Your HP Right Now</strong>
+        <p>A 1TB NVMe SSD + 32GB RAM will stop the freezing and make your HP feel 3x faster. This buys you time to save for a new PC.</p>
+    </div>
+
+    <div class="spec-grid">
+        <div class="spec-card">
+            <h4>Best SSD for Your HP</h4>
+            <div class="spec-val">Samsung 990 EVO 1TB</div>
+            <div class="spec-note">~$90–$120 &bull; PCIe 4.0 &bull; 4.7/5 rating</div>
+        </div>
+        <div class="spec-card">
+            <h4>Best RAM for Your HP</h4>
+            <div class="spec-val">Crucial 32GB DDR4-2666</div>
+            <div class="spec-note">~$82–$110 &bull; CT2K16G4DFRA266 &bull; 4.8/5 rating</div>
+        </div>
+        <div class="spec-card">
+            <h4>Best Budget New PC</h4>
+            <div class="spec-val">CyberPowerPC at Costco</div>
+            <div class="spec-note">$850–$1,100 &bull; RTX 5060 &bull; 32GB DDR5 &bull; 2TB SSD</div>
+        </div>
+        <div class="spec-card">
+            <h4>Best Mid-Range New PC</h4>
+            <div class="spec-val">MSI Aegis Z2 on Newegg</div>
+            <div class="spec-note">$1,599 ($500 off!) &bull; RTX 5070 &bull; 32GB DDR5 &bull; 2TB SSD</div>
+        </div>
+    </div>
+
+    <h2>Why Your HP Is Freezing &amp; Crashing</h2>
+    <div class="table-wrap">
+        <table>
+            <thead><tr><th>Problem</th><th>Cause</th><th>Fix</th></tr></thead>
+            <tbody>
+                <tr><td><strong>Slow boot &amp; app loading</strong></td><td>No SSD — running off a 7200RPM hard drive</td><td>Add NVMe SSD as boot drive</td></tr>
+                <tr><td><strong>Freezing with AI tools open</strong></td><td>Only 12GB RAM (4GB + 8GB mismatched)</td><td>Upgrade to 32GB matched kit</td></tr>
+                <tr><td><strong>Overall sluggishness</strong></td><td>Single-channel RAM (mismatched sticks)</td><td>2x16GB kit = dual-channel</td></tr>
+                <tr><td><strong>Can't keep up with vibe coding</strong></td><td>6-year-old i5-8400 CPU, no dedicated GPU</td><td>Consider new PC long-term</td></tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- NVMe SSDs -->
+<!-- ============================================================ -->
+<div class="section" id="ssds">
+    <br>
+    <div class="tip">
+        <strong>Compatibility Confirmed</strong>
+        <p>Your HP has 1 M.2 2280 slot (PCIe 3.0 x4, M-Key). All Gen 4/5 drives work — they just run at Gen 3 speed (~3,500 MB/s max). SATA M.2 drives will NOT work.</p>
+    </div>
+
+    <h2>NVMe SSDs — Sorted by Best Deal, Reputation, Rating</h2>
+
+    <div class="search-bar">
+        <input type="text" id="ssd-filter" placeholder="Filter SSDs... (e.g. Samsung, 2TB, Crucial)" oninput="filterTable('ssd-table', this.value)">
+    </div>
+
+    <div class="table-wrap">
+        <table id="ssd-table">
+            <thead>
+                <tr>
+                    <th onclick="sortTable('ssd-table',0)">#</th>
+                    <th onclick="sortTable('ssd-table',1)">Product</th>
+                    <th onclick="sortTable('ssd-table',2)">Capacity</th>
+                    <th onclick="sortTable('ssd-table',3)">Interface</th>
+                    <th onclick="sortTable('ssd-table',4)">Read Speed</th>
+                    <th onclick="sortTable('ssd-table',5)">Est. Price</th>
+                    <th onclick="sortTable('ssd-table',6)">Rating</th>
+                    <th>Buy Links</th>
+                    <th>Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="best-pick">
+                    <td>1</td>
+                    <td><strong>Samsung 990 EVO</strong> <span class="tag tag-top">TOP PICK</span></td>
+                    <td>1TB</td>
+                    <td>PCIe 4.0</td>
+                    <td>5,000 MB/s</td>
+                    <td class="price">$100–$120</td>
+                    <td>4.7/5</td>
+                    <td><a href="https://www.amazon.com/s?k=samsung+990+evo+1tb" target="_blank">Amazon</a> &bull; <a href="https://www.newegg.com/p/pl?d=samsung+990+evo+1tb" target="_blank">Newegg</a></td>
+                    <td>Budget Samsung, excellent reliability</td>
+                </tr>
+                <tr class="best-pick">
+                    <td>2</td>
+                    <td><strong>WD Blue SN580</strong> <span class="tag tag-deal">GREAT VALUE</span></td>
+                    <td>1TB</td>
+                    <td>PCIe 4.0</td>
+                    <td>4,150 MB/s</td>
+                    <td class="price">$90–$130</td>
+                    <td>4.7/5</td>
+                    <td><a href="https://www.amazon.com/s?k=WD+Blue+SN580+1TB" target="_blank">Amazon</a> &bull; <a href="https://www.bestbuy.com/site/searchpage.jsp?st=WD+Blue+SN580+1TB" target="_blank">Best Buy</a> &bull; <a href="https://www.newegg.com/p/pl?d=WD+Blue+SN580+1TB" target="_blank">Newegg</a></td>
+                    <td>DRAM-less but fast HMB, great budget pick</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><strong>Crucial P3</strong></td>
+                    <td>1TB</td>
+                    <td>PCIe 3.0</td>
+                    <td>3,500 MB/s</td>
+                    <td class="price">$80–$180</td>
+                    <td>4.6/5</td>
+                    <td><a href="https://www.amazon.com/s?k=Crucial+P3+1TB+NVMe" target="_blank">Amazon</a> &bull; <a href="https://www.bestbuy.com/site/searchpage.jsp?st=Crucial+P3+1TB" target="_blank">Best Buy</a> &bull; <a href="https://www.microcenter.com/search/search_results.aspx?Ntt=Crucial+P3+1TB" target="_blank">Micro Center</a></td>
+                    <td>Native Gen 3 — no wasted bandwidth</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td><strong>Crucial P310</strong></td>
+                    <td>1TB</td>
+                    <td>PCIe 4.0</td>
+                    <td>7,100 MB/s</td>
+                    <td class="price">~$130</td>
+                    <td>4.5/5</td>
+                    <td><a href="https://www.amazon.com/s?k=crucial+p310+1tb" target="_blank">Amazon</a> &bull; <a href="https://www.newegg.com/p/pl?d=crucial+p310+1tb" target="_blank">Newegg</a></td>
+                    <td>Newer model, runs at Gen 3 in your HP</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td><strong>Samsung 990 Pro</strong></td>
+                    <td>1TB</td>
+                    <td>PCIe 4.0</td>
+                    <td>7,450 MB/s</td>
+                    <td class="price">~$120</td>
+                    <td>4.8/5</td>
+                    <td><a href="https://www.amazon.com/s?k=Samsung+990+Pro+1TB" target="_blank">Amazon</a> &bull; <a href="https://www.newegg.com/p/pl?d=Samsung+990+Pro+1TB" target="_blank">Newegg</a></td>
+                    <td>Premium pick, top-tier reliability</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td><strong>Samsung 990 Pro</strong></td>
+                    <td>2TB</td>
+                    <td>PCIe 4.0</td>
+                    <td>7,450 MB/s</td>
+                    <td class="price">~$400</td>
+                    <td>4.8/5</td>
+                    <td><a href="https://www.amazon.com/s?k=Samsung+990+Pro+2TB" target="_blank">Amazon</a> &bull; <a href="https://www.bestbuy.com/site/searchpage.jsp?st=Samsung+990+Pro+2TB" target="_blank">Best Buy</a></td>
+                    <td>Best 2TB but prices have surged</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td><strong>WD_BLACK SN850X</strong> <span class="tag tag-deal">DEAL</span></td>
+                    <td>2TB</td>
+                    <td>PCIe 4.0</td>
+                    <td>7,300 MB/s</td>
+                    <td class="price">~$199</td>
+                    <td>4.8/5</td>
+                    <td><a href="https://www.amazon.com/s?k=WD+Black+SN850X+2TB" target="_blank">Amazon</a> &bull; <a href="https://www.newegg.com/p/pl?d=WD+Black+SN850X+2TB" target="_blank">Newegg</a></td>
+                    <td>Best value 2TB if on sale</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td><strong>Crucial P3 Plus</strong></td>
+                    <td>1TB</td>
+                    <td>PCIe 4.0</td>
+                    <td>5,000 MB/s</td>
+                    <td class="price">$100–$150</td>
+                    <td>4.6/5</td>
+                    <td><a href="https://www.amazon.com/s?k=Crucial+P3+Plus+1TB" target="_blank">Amazon</a> &bull; <a href="https://www.newegg.com/p/pl?d=Crucial+P3+Plus+1TB" target="_blank">Newegg</a> &bull; <a href="https://www.microcenter.com/search/search_results.aspx?Ntt=Crucial+P3+Plus+1TB" target="_blank">Micro Center</a></td>
+                    <td>Gen 4 upgrade from P3</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- DDR4 RAM -->
+<!-- ============================================================ -->
+<div class="section" id="ram">
+    <br>
+    <div class="tip">
+        <strong>Compatibility Confirmed</strong>
+        <p>Your HP needs DDR4-2666 UDIMM, 288-pin, Non-ECC, 1.2V. Max 32GB across 2 slots. Remove BOTH old sticks and install a matched 2x16GB kit for dual-channel.</p>
+    </div>
+
+    <h2>DDR4-2666 RAM (32GB Kits) — Sorted by Best Deal, Reputation, Rating</h2>
+
+    <div class="search-bar">
+        <input type="text" id="ram-filter" placeholder="Filter RAM... (e.g. Crucial, Corsair, CL16)" oninput="filterTable('ram-table', this.value)">
+    </div>
+
+    <div class="table-wrap">
+        <table id="ram-table">
+            <thead>
+                <tr>
+                    <th onclick="sortTable('ram-table',0)">#</th>
+                    <th onclick="sortTable('ram-table',1)">Product</th>
+                    <th onclick="sortTable('ram-table',2)">Capacity</th>
+                    <th onclick="sortTable('ram-table',3)">Speed</th>
+                    <th onclick="sortTable('ram-table',4)">CAS</th>
+                    <th onclick="sortTable('ram-table',5)">Est. Price</th>
+                    <th onclick="sortTable('ram-table',6)">Rating</th>
+                    <th>Buy Links</th>
+                    <th>Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="best-pick">
+                    <td>1</td>
+                    <td><strong>Crucial CT2K16G4DFRA266</strong> <span class="tag tag-top">TOP PICK</span></td>
+                    <td>2x16GB</td>
+                    <td>DDR4-2666</td>
+                    <td>CL19</td>
+                    <td class="price">$82–$110</td>
+                    <td>4.8/5</td>
+                    <td><a href="https://www.amazon.com/s?k=Crucial+CT2K16G4DFRA266" target="_blank">Amazon</a> &bull; <a href="https://www.newegg.com/p/pl?d=Crucial+CT2K16G4DFRA266" target="_blank">Newegg</a> &bull; <a href="https://www.bhphotovideo.com/c/search?q=Crucial+CT2K16G4DFRA266" target="_blank">B&H</a></td>
+                    <td>Exact part from Crucial's compatibility scanner for your HP</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><strong>Corsair Vengeance LPX</strong></td>
+                    <td>2x16GB</td>
+                    <td>DDR4-2666</td>
+                    <td>CL16</td>
+                    <td class="price">$90–$120</td>
+                    <td>4.8/5</td>
+                    <td><a href="https://www.amazon.com/s?k=Corsair+Vengeance+LPX+32GB+DDR4+2666" target="_blank">Amazon</a> &bull; <a href="https://www.newegg.com/p/pl?d=Corsair+Vengeance+LPX+32GB+DDR4+2666" target="_blank">Newegg</a></td>
+                    <td>Premium brand, lower latency (CL16)</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><strong>G.SKILL Aegis</strong></td>
+                    <td>2x16GB</td>
+                    <td>DDR4-2666</td>
+                    <td>CL19</td>
+                    <td class="price">$80–$100</td>
+                    <td>4.7/5</td>
+                    <td><a href="https://www.newegg.com/p/pl?d=G.SKILL+Aegis+32GB+DDR4+2666" target="_blank">Newegg</a> &bull; <a href="https://www.amazon.com/s?k=G.SKILL+Aegis+32GB+DDR4+2666" target="_blank">Amazon</a></td>
+                    <td>Budget-friendly, 1,399+ Newegg reviews</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td><strong>A-Tech 32GB Kit</strong> <span class="tag tag-deal">CHEAPEST</span></td>
+                    <td>2x16GB</td>
+                    <td>DDR4-2666</td>
+                    <td>CL19</td>
+                    <td class="price">$65–$85</td>
+                    <td>4.5/5</td>
+                    <td><a href="https://www.amazon.com/s?k=A-Tech+32GB+DDR4+2666+desktop" target="_blank">Amazon</a></td>
+                    <td>Cheapest option, smaller brand but well-reviewed</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td><strong>ADATA Premier</strong></td>
+                    <td>1x32GB</td>
+                    <td>DDR4-2666</td>
+                    <td>CL19</td>
+                    <td class="price">$70–$95</td>
+                    <td>4.4/5</td>
+                    <td><a href="https://www.amazon.com/s?k=ADATA+Premier+32GB+DDR4+2666" target="_blank">Amazon</a></td>
+                    <td>Single stick — leaves 1 slot open for future</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td><strong>Patriot Viper Elite II</strong></td>
+                    <td>2x16GB</td>
+                    <td>DDR4-2666</td>
+                    <td>CL16</td>
+                    <td class="price">$95–$115</td>
+                    <td>4.6/5</td>
+                    <td><a href="https://www.bestbuy.com/site/searchpage.jsp?st=Patriot+Viper+DDR4+2666+32GB" target="_blank">Best Buy</a> &bull; <a href="https://www.amazon.com/s?k=Patriot+Viper+Elite+32GB+DDR4+2666" target="_blank">Amazon</a></td>
+                    <td>Available at Best Buy for in-store pickup</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td><strong>Timetec 32GB Kit</strong></td>
+                    <td>2x16GB</td>
+                    <td>DDR4-2666</td>
+                    <td>CL19</td>
+                    <td class="price">$70–$90</td>
+                    <td>4.5/5</td>
+                    <td><a href="https://www.amazon.com/s?k=Timetec+32GB+DDR4+2666" target="_blank">Amazon</a> &bull; <a href="https://www.newegg.com/p/pl?d=Timetec+32GB+DDR4+2666" target="_blank">Newegg</a></td>
+                    <td>Multi-speed rated (2666/2933/3200)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- NEW PCs -->
+<!-- ============================================================ -->
+<div class="section" id="pcs">
+    <br>
+    <div class="alert">
+        <strong>Prebuilts are better value than custom builds right now</strong>
+        <p>Manufacturers bought components in bulk before the 2026 price hikes. You get more for your money with a prebuilt today.</p>
+    </div>
+
+    <h2>Prebuilt Desktops for AI Vibe Coding — Major Retailers</h2>
+
+    <div class="search-bar">
+        <input type="text" id="pc-filter" placeholder="Filter PCs... (e.g. RTX 5070, MSI, under 1600)" oninput="filterTable('pc-table', this.value)">
+    </div>
+
+    <div class="table-wrap">
+        <table id="pc-table">
+            <thead>
+                <tr>
+                    <th onclick="sortTable('pc-table',0)">#</th>
+                    <th onclick="sortTable('pc-table',1)">Product</th>
+                    <th onclick="sortTable('pc-table',2)">CPU</th>
+                    <th onclick="sortTable('pc-table',3)">GPU</th>
+                    <th onclick="sortTable('pc-table',4)">RAM</th>
+                    <th onclick="sortTable('pc-table',5)">Storage</th>
+                    <th onclick="sortTable('pc-table',6)">Price</th>
+                    <th>Retailer</th>
+                    <th>Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="best-pick">
+                    <td>1</td>
+                    <td><strong>ABS Flux II Aqua</strong> <span class="tag tag-deal">$200 OFF</span></td>
+                    <td>Intel i5-14400F</td>
+                    <td>RTX 5060 8GB</td>
+                    <td>32GB DDR4</td>
+                    <td>1TB NVMe</td>
+                    <td class="price">$1,050</td>
+                    <td><a href="https://www.newegg.com/p/pl?d=ABS+Flux+RTX+5060" target="_blank">Newegg</a></td>
+                    <td>Cheapest RTX 5060 prebuilt w/ 32GB</td>
+                </tr>
+                <tr class="best-pick">
+                    <td>2</td>
+                    <td><strong>MSI Aegis Z2</strong> <span class="tag tag-deal">$500 OFF</span></td>
+                    <td>Ryzen 7 8700F</td>
+                    <td>RTX 5070 12GB</td>
+                    <td>32GB DDR5</td>
+                    <td>2TB NVMe</td>
+                    <td class="price">$1,599</td>
+                    <td><a href="https://www.newegg.com/p/pl?d=MSI+Aegis+Z2+RTX+5070" target="_blank">Newegg</a></td>
+                    <td>Best value RTX 5070 prebuilt</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><strong>Skytech Shadow</strong> <span class="tag tag-deal">13% OFF</span></td>
+                    <td>Ryzen 7 7700</td>
+                    <td>RTX 5070 12GB</td>
+                    <td>32GB DDR5-6000</td>
+                    <td>1TB NVMe</td>
+                    <td class="price">$1,500–$1,600</td>
+                    <td><a href="https://www.newegg.com/p/pl?d=Skytech+Shadow+RTX+5070" target="_blank">Newegg</a></td>
+                    <td>Clean build, 850W Gold PSU</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td><strong>Lenovo Legion Tower 5i</strong></td>
+                    <td>Core Ultra 7 265F</td>
+                    <td>RTX 5070 Ti 16GB</td>
+                    <td>32GB DDR5</td>
+                    <td>1TB SSD</td>
+                    <td class="price">$1,680</td>
+                    <td><a href="https://www.lenovo.com/us/en/desktops/legion-desktops/" target="_blank">Lenovo</a></td>
+                    <td>Excellent build quality, Legion cooling</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td><strong>MSI Aegis RS2</strong> <span class="tag tag-deal">$300 OFF</span></td>
+                    <td>Core Ultra 7 265K</td>
+                    <td>RTX 5070 12GB</td>
+                    <td>32GB DDR5</td>
+                    <td>2TB SSD</td>
+                    <td class="price">$1,799</td>
+                    <td><a href="https://www.newegg.com/p/pl?d=MSI+Aegis+RS2+RTX+5070" target="_blank">Newegg</a></td>
+                    <td>Includes NPU for AI tasks</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td><strong>iBUYPOWER Element</strong></td>
+                    <td>Core Ultra 7 265F</td>
+                    <td>RTX 5070 12GB</td>
+                    <td>32GB DDR5 RGB</td>
+                    <td>2TB SSD</td>
+                    <td class="price">$1,700–$1,900</td>
+                    <td><a href="https://www.bestbuy.com/site/searchpage.jsp?st=iBUYPOWER+Element+RTX+5070" target="_blank">Best Buy</a></td>
+                    <td>Good all-rounder from Best Buy</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td><strong>CyberPowerPC (9800X3D)</strong></td>
+                    <td>Ryzen 7 9800X3D</td>
+                    <td>RTX 5070 12GB</td>
+                    <td>32GB DDR5</td>
+                    <td>2TB SSD</td>
+                    <td class="price">$1,800–$2,000</td>
+                    <td><a href="https://www.bestbuy.com/site/searchpage.jsp?st=CyberPowerPC+9800X3D+RTX+5070" target="_blank">Best Buy</a></td>
+                    <td>9800X3D = fastest consumer CPU</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td><strong>Alienware Aurora</strong></td>
+                    <td>Core Ultra 7 265F</td>
+                    <td>RTX 5070 12GB</td>
+                    <td>32GB DDR5</td>
+                    <td>1TB SSD</td>
+                    <td class="price">$1,837</td>
+                    <td><a href="https://www.dell.com/en-us/shop/desktop-computers/scr/desktops" target="_blank">Dell</a></td>
+                    <td>1000W Platinum PSU, Dell support</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td><strong>ASUS ROG G700</strong></td>
+                    <td>Core Ultra 7 265KF</td>
+                    <td>RTX 5070 12GB</td>
+                    <td>32GB DDR5</td>
+                    <td>2TB SSD</td>
+                    <td class="price">$1,894</td>
+                    <td><a href="https://www.bestbuy.com/site/searchpage.jsp?st=ASUS+ROG+G700" target="_blank">Best Buy</a></td>
+                    <td>Premium build, water-cooled CPU</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td><strong>MSI Aegis RS2 (High-End)</strong> <span class="tag tag-deal">$800 OFF</span></td>
+                    <td>Core Ultra 7 265K</td>
+                    <td>RTX 5070 12GB</td>
+                    <td>32GB DDR5</td>
+                    <td>2TB SSD</td>
+                    <td class="price">$1,899</td>
+                    <td><a href="https://www.newegg.com/p/pl?d=MSI+Aegis+RS2+desktop" target="_blank">Newegg</a></td>
+                    <td>Massive discount from $2,699</td>
+                </tr>
+                <tr class="best-pick">
+                    <td>11</td>
+                    <td><strong>iBUYPOWER (5070 Ti)</strong> <span class="tag tag-top">BEST FOR AI</span></td>
+                    <td>Ryzen 7 7800X3D</td>
+                    <td>RTX 5070 Ti 16GB</td>
+                    <td>32GB DDR5</td>
+                    <td>2TB SSD</td>
+                    <td class="price">$1,999</td>
+                    <td><a href="https://www.newegg.com/p/pl?d=iBUYPOWER+7800X3D+RTX+5070+Ti" target="_blank">Newegg</a></td>
+                    <td>16GB VRAM for local AI models</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- WAREHOUSE CLUBS -->
+<!-- ============================================================ -->
+<div class="section" id="warehouse">
+    <br>
+    <div class="tip">
+        <strong>Warehouse clubs = best return policies + lowest prices</strong>
+        <p>Costco has 90-day electronics returns and often includes 2-year warranties. Sam's Club Plus members get free shipping. BJ's has limited desktop selection.</p>
+    </div>
+
+    <h2>Costco / Sam's Club / BJ's Desktop Deals</h2>
+
+    <div class="table-wrap">
+        <table id="warehouse-table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Product</th>
+                    <th>CPU</th>
+                    <th>GPU</th>
+                    <th>RAM</th>
+                    <th>Storage</th>
+                    <th>Price</th>
+                    <th>Store</th>
+                    <th>Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="best-pick">
+                    <td>1</td>
+                    <td><strong>CyberPowerPC Gamer Xtreme</strong> <span class="tag tag-club">COSTCO</span> <span class="tag tag-top">BEST VALUE</span></td>
+                    <td>Core Ultra 5 225F</td>
+                    <td>RTX 5060 8GB</td>
+                    <td>32GB DDR5-6400</td>
+                    <td>2TB NVMe</td>
+                    <td class="price">$850–$1,100</td>
+                    <td><a href="https://www.costco.com/CatalogSearch?keyword=cyberpowerpc+gaming+desktop" target="_blank">Costco</a></td>
+                    <td>Parts alone cost more. 90-day return. Unbeatable value.</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><strong>CyberPowerPC Gamer Supreme</strong> <span class="tag tag-club">COSTCO</span></td>
+                    <td>Ryzen 9 9900X (12-core)</td>
+                    <td>RTX 5070 Ti 16GB</td>
+                    <td>32GB DDR5-6000</td>
+                    <td>2TB NVMe</td>
+                    <td class="price">$1,700–$2,000</td>
+                    <td><a href="https://www.costco.com/CatalogSearch?keyword=cyberpowerpc+gamer+supreme" target="_blank">Costco</a></td>
+                    <td>Premium: 12 cores + 16GB VRAM for AI. Check stock.</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><strong>iBUYPOWER Slate</strong> <span class="tag tag-club">SAM'S</span></td>
+                    <td>Intel i7-14700F</td>
+                    <td>RTX 5060 Ti 8GB</td>
+                    <td>32GB DDR5 RGB</td>
+                    <td>1TB NVMe</td>
+                    <td class="price">$1,100–$1,300</td>
+                    <td><a href="https://www.samsclub.com/s/gaming+desktop+RTX" target="_blank">Sam's Club</a></td>
+                    <td>Good mid-range, 14th gen i7 multitasks well</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td><strong>HP OMEN 16L</strong> <span class="tag tag-club">SAM'S</span> <span class="tag tag-warn">16GB ONLY</span></td>
+                    <td>Intel i7-14700F</td>
+                    <td>RTX 5060</td>
+                    <td>16GB DDR5</td>
+                    <td>1TB NVMe</td>
+                    <td class="price">$1,199</td>
+                    <td><a href="https://www.samsclub.com/s/HP+OMEN+desktop" target="_blank">Sam's Club</a></td>
+                    <td>Only 16GB RAM — need immediate RAM upgrade</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="section-sub">Direct Links to Warehouse Club Computer Sections</h3>
+    <div class="link-grid">
+        <a class="link-card" href="https://www.costco.com/desktops-servers.html?brand=cyberpowerpc&computer-type=gaming" target="_blank">
+            <div class="link-icon">&#127979;</div>
+            <div><div class="link-text">Costco Gaming Desktops</div><div class="link-sub">CyberPowerPC, iBUYPOWER &bull; 90-day returns</div></div>
+        </a>
+        <a class="link-card" href="https://www.samsclub.com/b/gaming-desktops/14490102" target="_blank">
+            <div class="link-icon">&#128722;</div>
+            <div><div class="link-text">Sam's Club Gaming Desktops</div><div class="link-sub">HP, iBUYPOWER, CyberPowerPC</div></div>
+        </a>
+        <a class="link-card" href="https://www.bjs.com/category/tvs-and-electronics/computers/desktop-computers/" target="_blank">
+            <div class="link-icon">&#128187;</div>
+            <div><div class="link-text">BJ's Desktop Computers</div><div class="link-sub">Limited selection &bull; Better for laptops</div></div>
+        </a>
+        <a class="link-card" href="https://www.bjs.com/category/wow-deals/tvs-and-tech-deals/computers-and-tablets-deals/" target="_blank">
+            <div class="link-icon">&#127991;</div>
+            <div><div class="link-text">BJ's Tech Clearance Deals</div><div class="link-sub">Check for markdowns and bundle deals</div></div>
+        </a>
+    </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- SEARCH TOOL -->
+<!-- ============================================================ -->
+<div class="section" id="search">
+    <br>
+    <h2>Search Any Retailer Instantly</h2>
+    <p style="color: var(--text-muted); margin-bottom: 1rem;">Type what you're looking for and click a retailer to search their site directly.</p>
+
+    <div class="search-bar">
+        <input type="text" id="custom-search" value="1TB NVMe SSD" placeholder="Type your search... (e.g. RTX 5070 desktop, 32GB DDR4 2666)">
+    </div>
+
+    <div class="link-grid" id="retailer-links">
+        <!-- Populated by JS -->
+    </div>
+
+    <h3 class="section-sub">Quick Searches</h3>
+    <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem;">
+        <button onclick="setSearch('1TB NVMe M.2 SSD')" style="padding:0.5rem 1rem;background:var(--surface);border:1px solid var(--border);border-radius:6px;color:var(--text);cursor:pointer;">1TB NVMe SSD</button>
+        <button onclick="setSearch('2TB NVMe M.2 SSD')" style="padding:0.5rem 1rem;background:var(--surface);border:1px solid var(--border);border-radius:6px;color:var(--text);cursor:pointer;">2TB NVMe SSD</button>
+        <button onclick="setSearch('32GB DDR4 2666 desktop RAM')" style="padding:0.5rem 1rem;background:var(--surface);border:1px solid var(--border);border-radius:6px;color:var(--text);cursor:pointer;">32GB DDR4-2666 RAM</button>
+        <button onclick="setSearch('Samsung 990 EVO 1TB')" style="padding:0.5rem 1rem;background:var(--surface);border:1px solid var(--border);border-radius:6px;color:var(--text);cursor:pointer;">Samsung 990 EVO</button>
+        <button onclick="setSearch('Crucial CT2K16G4DFRA266')" style="padding:0.5rem 1rem;background:var(--surface);border:1px solid var(--border);border-radius:6px;color:var(--text);cursor:pointer;">Crucial 32GB Kit</button>
+        <button onclick="setSearch('RTX 5070 32GB desktop PC')" style="padding:0.5rem 1rem;background:var(--surface);border:1px solid var(--border);border-radius:6px;color:var(--text);cursor:pointer;">RTX 5070 Desktop</button>
+        <button onclick="setSearch('RTX 5070 Ti gaming desktop prebuilt')" style="padding:0.5rem 1rem;background:var(--surface);border:1px solid var(--border);border-radius:6px;color:var(--text);cursor:pointer;">RTX 5070 Ti Desktop</button>
+        <button onclick="setSearch('RTX 5060 32GB desktop')" style="padding:0.5rem 1rem;background:var(--surface);border:1px solid var(--border);border-radius:6px;color:var(--text);cursor:pointer;">RTX 5060 Desktop</button>
+        <button onclick="setSearch('CyberPowerPC gaming desktop')" style="padding:0.5rem 1rem;background:var(--surface);border:1px solid var(--border);border-radius:6px;color:var(--text);cursor:pointer;">CyberPowerPC</button>
+    </div>
+
+    <h3 class="section-sub">Price Trackers &amp; Deal Sites (Check Daily)</h3>
+    <div class="link-grid">
+        <a class="link-card" href="https://www.tomshardware.com/pc-components/ssds/ssd-price-tracking-2026-lowest-price-on-every-m-2-ssd" target="_blank">
+            <div class="link-icon">&#128200;</div>
+            <div><div class="link-text">Tom's Hardware SSD Price Tracker</div><div class="link-sub">Updated daily &bull; Lowest price on every M.2 SSD</div></div>
+        </a>
+        <a class="link-card" href="https://www.tomshardware.com/desktops/gaming-pcs/best-gaming-pc-deals" target="_blank">
+            <div class="link-icon">&#128187;</div>
+            <div><div class="link-text">Tom's Hardware PC Deals</div><div class="link-sub">Best gaming PC deals aggregated</div></div>
+        </a>
+        <a class="link-card" href="https://slickdeals.net/deals/ssd/" target="_blank">
+            <div class="link-icon">&#128293;</div>
+            <div><div class="link-text">Slickdeals — SSD Deals</div><div class="link-sub">Community-voted flash sales and coupons</div></div>
+        </a>
+        <a class="link-card" href="https://pcpartpicker.com/products/memory/#S=2666&Z=32768002" target="_blank">
+            <div class="link-icon">&#128202;</div>
+            <div><div class="link-text">PCPartPicker — DDR4-2666 32GB</div><div class="link-sub">Compare prices across all retailers</div></div>
+        </a>
+        <a class="link-card" href="https://www.newegg.com/p/pl?N=100897449+601468988" target="_blank">
+            <div class="link-icon">&#128640;</div>
+            <div><div class="link-text">Newegg — RTX 50 Series PCs</div><div class="link-sub">25th Anniversary Sale active now!</div></div>
+        </a>
+        <a class="link-card" href="https://camelcamelcamel.com/" target="_blank">
+            <div class="link-icon">&#128038;</div>
+            <div><div class="link-text">CamelCamelCamel</div><div class="link-sub">Amazon price history tracker &bull; Set price alerts</div></div>
+        </a>
+    </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- YOUR HP SPECS -->
+<!-- ============================================================ -->
+<div class="section" id="specs">
+    <br>
+    <h2>Your HP Pavilion 590-p0066 — Full Specs</h2>
+
+    <div class="spec-grid">
+        <div class="spec-card">
+            <h4>Model</h4>
+            <div class="spec-val">HP Pavilion 590-p0066</div>
+            <div class="spec-note">~6 years old (2018/2019)</div>
+        </div>
+        <div class="spec-card">
+            <h4>Motherboard</h4>
+            <div class="spec-val">HP Lincs (Intel H370)</div>
+            <div class="spec-note">Micro-ATX, LGA1151 socket</div>
+        </div>
+        <div class="spec-card">
+            <h4>CPU</h4>
+            <div class="spec-val">Intel Core i5-8400</div>
+            <div class="spec-note">6 cores, 2.8GHz (no hyperthreading)</div>
+        </div>
+        <div class="spec-card">
+            <h4>Current RAM</h4>
+            <div class="spec-val">12GB DDR4-2666</div>
+            <div class="spec-note">1x4GB + 1x8GB (mismatched = slow)</div>
+        </div>
+        <div class="spec-card">
+            <h4>Current Storage</h4>
+            <div class="spec-val">1TB 7200RPM HDD</div>
+            <div class="spec-note">No SSD — this is your #1 bottleneck</div>
+        </div>
+        <div class="spec-card">
+            <h4>GPU</h4>
+            <div class="spec-val">Intel UHD Graphics 630</div>
+            <div class="spec-note">Integrated — no dedicated GPU</div>
+        </div>
+    </div>
+
+    <h2>Upgrade Compatibility</h2>
+
+    <div class="table-wrap">
+        <table>
+            <thead><tr><th>Component</th><th>Specification</th><th>Important Notes</th></tr></thead>
+            <tbody>
+                <tr>
+                    <td><strong>M.2 SSD</strong></td>
+                    <td>M.2 2280, PCIe 3.0 x4, NVMe, M-Key</td>
+                    <td>SATA M.2 will NOT work. Gen 4/5 drives are backwards compatible. Located under DVD drive.</td>
+                </tr>
+                <tr>
+                    <td><strong>Max SSD Speed</strong></td>
+                    <td>~3,500 MB/s (PCIe 3.0 limit)</td>
+                    <td>Faster drives work but cap at Gen 3 speed. Don't overspend on Gen 5.</td>
+                </tr>
+                <tr>
+                    <td><strong>RAM Type</strong></td>
+                    <td>DDR4-2666 UDIMM, 288-pin, Non-ECC, 1.2V</td>
+                    <td>DDR4-3200 will work but downclocks to 2666. Save money, buy 2666.</td>
+                </tr>
+                <tr>
+                    <td><strong>Max RAM</strong></td>
+                    <td>32GB (2 x 16GB)</td>
+                    <td>Remove BOTH old sticks. Install matched 2x16GB kit for dual-channel.</td>
+                </tr>
+                <tr>
+                    <td><strong>RAM Slots</strong></td>
+                    <td>2 slots</td>
+                    <td>Both slots must be used for maximum 32GB.</td>
+                </tr>
+                <tr>
+                    <td><strong>Optane Warning</strong></td>
+                    <td>May have 16GB Intel Optane cache</td>
+                    <td>If present, disable Optane in Intel RST before removing/replacing the M.2 drive.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="section-sub">Helpful Links</h3>
+    <div class="link-grid">
+        <a class="link-card" href="https://www.crucial.com/compatible-upgrade-for/hp/pavilion-590-p0066" target="_blank">
+            <div class="link-icon">&#128270;</div>
+            <div><div class="link-text">Crucial Compatibility Scanner</div><div class="link-sub">Verify any part works with your HP</div></div>
+        </a>
+        <a class="link-card" href="https://h30434.www3.hp.com/t5/Desktop-Hardware-and-Upgrade-Questions/What-type-of-SSD-does-HP-590-p0066-support/td-p/6913311" target="_blank">
+            <div class="link-icon">&#128172;</div>
+            <div><div class="link-text">HP Community — SSD Guide</div><div class="link-sub">Community-confirmed compatible SSDs</div></div>
+        </a>
+        <a class="link-card" href="https://h30434.www3.hp.com/t5/Desktop-Hardware-and-Upgrade-Questions/Upgrade-RAM-on-Pavilion-590-p0066/td-p/8214580" target="_blank">
+            <div class="link-icon">&#128172;</div>
+            <div><div class="link-text">HP Community — RAM Guide</div><div class="link-sub">Community-confirmed compatible RAM</div></div>
+        </a>
+    </div>
+</div>
+
+</div><!-- /container -->
+
+<footer>
+    HP Computer Upgrade &amp; PC Shopping Guide &bull; Data sourced from Amazon, Best Buy, Newegg, Costco, Sam's Club, BJ's, Tom's Hardware, and manufacturer sites &bull; February 2026<br>
+    Prices are estimates and may change. Always verify before purchasing.
+</footer>
+
+<script>
+// Tab navigation
+function showSection(id) {
+    document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+    event.target.classList.add('active');
+    window.scrollTo(0, 0);
+}
+
+// Table filtering
+function filterTable(tableId, query) {
+    const table = document.getElementById(tableId);
+    const rows = table.querySelectorAll('tbody tr');
+    const q = query.toLowerCase();
+    rows.forEach(row => {
+        const text = row.textContent.toLowerCase();
+        row.style.display = text.includes(q) ? '' : 'none';
+    });
+}
+
+// Table sorting
+let sortState = {};
+function sortTable(tableId, colIndex) {
+    const table = document.getElementById(tableId);
+    const tbody = table.querySelector('tbody');
+    const rows = Array.from(tbody.querySelectorAll('tr'));
+    const key = tableId + '-' + colIndex;
+    sortState[key] = !sortState[key];
+    const asc = sortState[key];
+
+    rows.sort((a, b) => {
+        let aVal = a.cells[colIndex]?.textContent.trim() || '';
+        let bVal = b.cells[colIndex]?.textContent.trim() || '';
+        // Try numeric sort (strip $ and commas)
+        const aNum = parseFloat(aVal.replace(/[$,~]/g, ''));
+        const bNum = parseFloat(bVal.replace(/[$,~]/g, ''));
+        if (!isNaN(aNum) && !isNaN(bNum)) {
+            return asc ? aNum - bNum : bNum - aNum;
+        }
+        return asc ? aVal.localeCompare(bVal) : bVal.localeCompare(aVal);
+    });
+
+    rows.forEach(row => tbody.appendChild(row));
+}
+
+// Retailer search links
+const retailers = [
+    { name: 'Amazon', icon: '&#128230;', url: 'https://www.amazon.com/s?k=', sub: 'Largest selection, fast shipping' },
+    { name: 'Best Buy', icon: '&#127991;', url: 'https://www.bestbuy.com/site/searchpage.jsp?st=', sub: 'Price match, in-store pickup' },
+    { name: 'Newegg', icon: '&#128187;', url: 'https://www.newegg.com/p/pl?d=', sub: 'PC specialist, frequent sales' },
+    { name: 'Micro Center', icon: '&#127978;', url: 'https://www.microcenter.com/search/search_results.aspx?Ntt=', sub: 'Best in-store deals' },
+    { name: 'B&H Photo', icon: '&#128247;', url: 'https://www.bhphotovideo.com/c/search?q=', sub: 'No tax in most states' },
+    { name: 'Walmart', icon: '&#128722;', url: 'https://www.walmart.com/search?q=', sub: 'Competitive prices' },
+    { name: 'Costco', icon: '&#127979;', url: 'https://www.costco.com/CatalogSearch?keyword=', sub: '90-day returns, membership req.' },
+    { name: "Sam's Club", icon: '&#127978;', url: 'https://www.samsclub.com/s/', sub: 'Good bundles, membership req.' },
+    { name: "BJ's", icon: '&#128722;', url: 'https://www.bjs.com/search/', sub: 'Limited tech, check clearance' },
+    { name: 'Slickdeals', icon: '&#128293;', url: 'https://slickdeals.net/newsearch.php?searcharea=deals&q=', sub: 'Community-voted deals' },
+    { name: 'PCPartPicker', icon: '&#128202;', url: 'https://pcpartpicker.com/search/?q=', sub: 'Compare prices everywhere' },
+];
+
+function buildRetailerLinks() {
+    const container = document.getElementById('retailer-links');
+    const query = document.getElementById('custom-search').value;
+    const encoded = encodeURIComponent(query);
+    container.innerHTML = retailers.map(r =>
+        `<a class="link-card" href="${r.url}${encoded}" target="_blank">
+            <div class="link-icon">${r.icon}</div>
+            <div><div class="link-text">${r.name}</div><div class="link-sub">${r.sub}</div></div>
+        </a>`
+    ).join('');
+}
+
+function setSearch(query) {
+    document.getElementById('custom-search').value = query;
+    buildRetailerLinks();
+}
+
+document.getElementById('custom-search').addEventListener('input', buildRetailerLinks);
+buildRetailerLinks();
+</script>
+</body>
+</html>
