@@ -2,10 +2,18 @@
 
 Structured shopping guide for upgrading an HP Pavilion Desktop 590-p0066 and finding a new AI-capable desktop PC for vibe coding with Claude Code, Cursor, and Antigravity.
 
+## Upgrade Progress
+
+| Part | Status | Price | Notes |
+|------|--------|-------|-------|
+| **NVMe SSD** | BOUGHT | $140 | MSI SPATIUM M480 PRO 1TB (Walmart) |
+| **RAM** | SHOPPING | ~$128+ | 32GB DDR4-2666 kit — see deals below |
+
 ## Files
 
 | File | Description |
 |------|-------------|
+| [SSD_INSTALL_GUIDE.md](SSD_INSTALL_GUIDE.md) | Step-by-step SSD installation and Windows/app migration guide |
 | [COMPATIBILITY_GUIDE.md](COMPATIBILITY_GUIDE.md) | Your HP's specs, compatible parts, and upgrade constraints |
 | [PARTS_DEALS.md](PARTS_DEALS.md) | NVMe SSD and DDR4 RAM deals sorted by price, reputation, and rating |
 | [NEW_COMPUTER_DEALS.md](NEW_COMPUTER_DEALS.md) | Prebuilt desktop PCs from Costco, Sam's Club, BJ's, Best Buy, Newegg, and more |
@@ -30,9 +38,9 @@ python3 search_parts.py --custom "RTX 5070 Ti 32GB"
 
 ## Top Recommendations
 
-### Upgrade Your HP Now (~$180)
-1. **Crucial 32GB DDR4-2666 Kit** (CT2K16G4DFRA266) — ~$82
-2. **WD Blue SN580 1TB NVMe** or **Samsung 990 EVO 1TB** — ~$100
+### Upgrade Your HP Now (~$270 total)
+1. **MSI M480 PRO 1TB NVMe** — $140 (BOUGHT)
+2. **Crucial 32GB DDR4-2666 Kit** (CT2K16G4DFRA266) — ~$128 at Walmart
 
 ### Best New PC for AI Vibe Coding
 - **Budget ($850–$1,100)**: CyberPowerPC Gamer Xtreme at Costco
