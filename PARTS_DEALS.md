@@ -37,70 +37,58 @@ Check [Tom's Hardware SSD Price Tracker](https://www.tomshardware.com/pc-compone
 ## PART 2: 32GB RAM for HP Pavilion 590-p0066
 
 > **DRAM Price Crisis (Updated Feb 27, 2026):** DDR4 32GB kits that sold for $60-$90 in October 2025
-> now cost **$240-$270+** at most retailers due to AI-driven DRAM shortages. Samsung and other
-> manufacturers are exiting DDR4 production, shifting to HBM for AI GPUs. Shortages expected through Q4 2027.
-> **Buy now — prices will keep rising.**
->
-> **KEY INSIGHT: DDR4-2666 now costs MORE than DDR4-3200** due to end-of-life supply constraints.
-> DDR4-3200 will automatically downclock to 2666MHz in your HP and work perfectly. **Buy DDR4-3200 to save money.**
+> now cost **~$240-$260** across the board — regardless of brand or speed — due to AI-driven DRAM
+> shortages. Samsung and other manufacturers are exiting DDR4 production, shifting to HBM for AI GPUs.
+> Shortages expected through Q4 2027. **Buy now — prices will keep rising.**
 >
 > Sources: [Tom's Hardware RAM Price Index](https://www.tomshardware.com/pc-components/ram/ram-price-index-2026-lowest-price-on-ddr5-and-ddr4-memory-of-all-capacities) |
-> [Tom's Hardware Forum — 2666 costs more than 3200](https://forums.tomshardware.com/threads/ddr4-sodimm-2666-costs-more-than-3200.3810694/) |
-> [WCCFTech Shortage Report](https://wccftech.com/memory-ddr5-ddr4-shortages-last-till-q4-2027-higher-prices-throughout-2026/) |
-> [Tom's Guide — DDR4 in 2026](https://www.tomsguide.com/computing/hardware/ddr4-in-2026-these-kits-can-help-you-beat-the-ram-crisis)
+> [Tom's Guide — DDR4 in 2026](https://www.tomsguide.com/computing/hardware/ddr4-in-2026-these-kits-can-help-you-beat-the-ram-crisis) |
+> [TechRadar — DDR4 Prices Rising](https://www.techradar.com/pro/is-ram-the-new-bitcoin-ddr4-memory-prices-are-rising-so-fast-some-tracker-graphs-are-running-out-of-space-and-i-fear-2026-could-well-see-a-10x-price-rise) |
+> [WCCFTech Shortage Report](https://wccftech.com/memory-ddr5-ddr4-shortages-last-till-q4-2027-higher-prices-throughout-2026/)
 
-### Why DDR4-3200 Is the Smarter Buy
+### Buy DDR4-3200 Instead of DDR4-2666
 
 Your HP's Intel H370 motherboard maxes out at DDR4-2666. But DDR4-3200 sticks **automatically downclock
-to 2666MHz** — no BIOS changes needed. In 2026, DDR4-3200 has much better supply because it was
-the mainstream speed longer, so it's often **cheaper** than DDR4-2666. Same performance in your PC, lower price.
+to 2666MHz** — no BIOS changes needed ([source](https://forums.tomshardware.com/threads/can-you-downclock-3200mhz-ddr4-ram-to-2666mhz.3397062/)).
+Since everything costs ~$240-250 anyway, **buy DDR4-3200 CL16** — you get a higher-spec product for the same money,
+and if you ever move the RAM to a newer PC, it'll run at full 3200MHz speed.
 
-### DDR4-3200 Kits (RECOMMENDED — Will Downclock to 2666 in Your HP)
+### 32GB (2x16GB) DDR4 Kits — All ~$240-$260 (Real Feb 2026 Prices)
 
-| # | Product | Capacity | Speed | CAS Latency | Est. Price (Feb 2026) | Retailer | Rating | Notes |
-|---|---------|----------|-------|-------------|----------------------|----------|--------|-------|
-| 1 | **Corsair Vengeance LPX CMK32GX4M2E3200C16** | 32GB (2x16GB) | DDR4-3200 | CL16 | ~$230–$243 | [Amazon](https://www.amazon.com/Corsair-VENGEANCE-3200MHz-Compatible-Computer/dp/B07RW6Z692), [Best Buy](https://www.bestbuy.com/product/corsair-vengeance-lpx-32gb-2x16gb-ddr4-3200mhz-c16-udimm-desktop-memory-black/J39QHH5FH5), [Newegg](https://www.newegg.com/corsair-vengeance-lpx-32gb-ddr4-3200-cas-latency-cl16-desktop-memory-black/p/N82E16820236541), [Walmart](https://www.walmart.com/ip/CORSAIR-Vengeance-LPX-32GB-2-x-16GB-288-Pin-PC-RAM-DDR4-3200-PC4-25600-Desktop-Memory-Model-CMK32GX4M2E3200C16/147004867), [Micro Center](https://www.microcenter.com/product/616299/) | 4.9/5 (3,040 reviews) | **BEST OF THE BEST** — CL16, premium Corsair quality, lifetime warranty. Best Buy has it at ~$243. Pangoly lowest tracked: $230. |
-| 2 | **V-Color Skywalker Plus TL416G32S816CSPKWK** | 32GB (2x16GB) | DDR4-3200 | CL16 | ~$119 (if in stock) | [Best Buy](https://www.bestbuy.com/product/v-color-32gb-2-x-16gb-ddr4-3200-pc4-25600-desktop-memory-model-tl416g32s816cspkwk-black/J3ZK8ZS82H), [Newegg](https://www.newegg.com/v-color-32gb-ddr4-3200-cas-latency-cl16-desktop-memory-black/p/N82E16820012103) | 4.5/5 | **POTENTIAL STEAL** — SK Hynix ICs, CL16, RGB. Reported $119 but may be sold out. Check stock! |
-| 3 | **KingSpec 32GB (2x16GB) DDR4-3200** | 32GB (2x16GB) | DDR4-3200 | CL18 | ~$85 (pre-order) | [Amazon](https://www.amazon.com/KingSpec-2x16GB-3200MHz-288-PIN-Desktop/dp/B0D1XNWP2N), [Newegg](https://www.newegg.com/kingspec-ddr4-pc-series-32gb-ddr4-3200-cas-latency-cl18-memory-black/p/0RN-00FW-00031) | 4.3/5 | **CHEAPEST** — Budget brand, CL18 (looser timings). Ships next month. 3-year warranty. |
-| 4 | **Silicon Power Value Gaming** | 32GB (2x16GB) | DDR4-3200 | CL16 | ~$150–$200 | [Amazon](https://www.amazon.com/Silicon-Power-3200MHz-Heatsink-SP032GXLZU320BDAJ7/dp/B092ZCVHS8) | 4.6/5 | Mid-range with heatspreader. CL16. |
-| 5 | **G.Skill Ripjaws V F4-3200C16D-32GVK** | 32GB (2x16GB) | DDR4-3200 | CL16 | ~$200–$270 | [Newegg](https://www.newegg.com/g-skill-ripjaws-v-series-16gb-ddr4-3200-cas-latency-cl16-desktop-memory-black/p/N82E16820231941), [Amazon](https://www.amazon.com/G-SKILL-Ripjaws-PC4-25600-3200MHz-F4-3200C16S-32GVK/dp/B082NX637D) | 4.8/5 | Premium G.Skill quality. 8,000+ reviews on Newegg. CL16. |
+Since prices have converged, **pick the best quality at whatever price you find.**
 
-### DDR4-2666 Kits (Native Speed — Often More Expensive Due to Shortage)
+| # | Product | Speed | CAS Latency | Price Range | Where to Buy | Rating | Why Consider |
+|---|---------|-------|-------------|-------------|-------------|--------|-------------|
+| 1 | **Corsair Vengeance LPX CMK32GX4M2E3200C16** | DDR4-3200 | **CL16** | ~$230–$263 | [Amazon](https://www.amazon.com/Corsair-VENGEANCE-3200MHz-Compatible-Computer/dp/B07RW6Z692), [Best Buy](https://www.bestbuy.com/product/corsair-vengeance-lpx-32gb-2x16gb-ddr4-3200mhz-c16-udimm-desktop-memory-black/J39QHH5FH5), [Newegg](https://www.newegg.com/corsair-vengeance-lpx-32gb-ddr4-3200-cas-latency-cl16-desktop-memory-black/p/N82E16820236541), [Walmart](https://www.walmart.com/ip/CORSAIR-Vengeance-LPX-32GB-2-x-16GB-288-Pin-PC-RAM-DDR4-3200-PC4-25600-Desktop-Memory-Model-CMK32GX4M2E3200C16/147004867), [Micro Center](https://www.microcenter.com/product/616299/) | 4.9/5 (3,040 reviews) | **BEST PICK** — CL16, premium quality, lifetime warranty, 3,040+ reviews. Best Buy ~$243. |
+| 2 | **Kingston FURY Beast KF432C16BBK2/32** | DDR4-3200 | **CL16** | ~$240–$260 | [Amazon](https://www.amazon.com/s?k=Kingston+FURY+Beast+32GB+DDR4+3200), [Walmart](https://www.walmart.com/ip/Kingston-FURY-Beast-32GB-2-x-16GB-288-Pin-PC-RAM-DDR4-3200-PC4-25600-Memory-Desktop-Memory-Model-KF432C16BBK2-32/202148232), [Newegg](https://www.newegg.com/p/pl?d=kingston+fury+beast+32gb+ddr4+3200) | 4.8/5 | Kingston reliability, XMP-ready, low-profile heatspreader. |
+| 3 | **G.Skill Ripjaws V F4-3200C16D-32GVK** | DDR4-3200 | **CL16** | ~$240–$270 | [Amazon](https://www.amazon.com/G-SKILL-Ripjaws-PC4-25600-3200MHz-F4-3200C16S-32GVK/dp/B082NX637D), [Newegg](https://www.newegg.com/g-skill-ripjaws-v-series-16gb-ddr4-3200-cas-latency-cl16-desktop-memory-black/p/N82E16820231941) | 4.8/5 | Premium G.Skill, 8,000+ reviews on Newegg. |
+| 4 | **Crucial CT2K16G4DFRA32A** | DDR4-3200 | CL22 | ~$240–$260 | [Amazon](https://www.amazon.com/Crucial-2x16GB-Desktop-Memory-CT2K16G4DFRA32A/dp/B08C56KXQJ), [Walmart](https://www.walmart.com/ip/Crucial-32GB-2-x-16GB-288-Pin-PC-RAM-DDR4-3200-PC4-25600-Desktop-Memory-Model-CT2K16G4DFRA32A/948970250) | 4.8/5 | Micron's own brand. Guaranteed HP compatible. CL22 is looser than CL16. |
+| 5 | **Team T-FORCE VULCAN Z** | DDR4-3200 | **CL16** | ~$240–$260 | [Walmart](https://www.walmart.com/ip/Team-T-FORCE-VULCAN-Z-32GB-2-x-16GB-288-Pin-PC-RAM-DDR4-3200-PC4-25600-Desktop-Memory-Model-TLZGD432G3200HC16FDC01/369911416), [Newegg](https://www.newegg.com/p/pl?d=team+vulcan+z+32gb+ddr4+3200) | 4.7/5 | Solid mid-tier option with heatspreader. |
+| 6 | **Corsair Vengeance LPX CMK32GX4M2A2666C16** | DDR4-2666 | CL16 | ~$240+ | [Amazon](https://www.amazon.com/Corsair-Vengeance-2x16GB-2666MHz-PC4-21300/dp/B0134EW44S), [Newegg](https://www.newegg.com/corsair-vengeance-lpx-32gb-ddr4-2666-cas-latency-cl16-memory-kit-black/p/N82E16820233853) | 4.8/5 | Same price as DDR4-3200 version — **buy the 3200 instead.** |
+| 7 | **Crucial CT2K16G4DFRA266** | DDR4-2666 | CL19 | ~$254+ | [Amazon](https://www.amazon.com/Crucial-2x16GB-Desktop-Memory-CT2K16G4DFRA266/dp/B08C4VGJL3), [Newegg](https://www.newegg.com/crucial-32gb-ddr4-2666-cas-latency-cl19-desktop-memory/p/N82E16820156267) | 4.8/5 | Crucial's recommended part for your HP. But CL19 and same price as better CL16 kits. |
 
-| # | Product | Capacity | Speed | CAS Latency | Real Price (Feb 2026) | Retailer | Rating | Notes |
-|---|---------|----------|-------|-------------|----------------------|----------|--------|-------|
-| 1 | **Crucial CT2K16G4DFRA266** | 32GB (2x16GB) | DDR4-2666 | CL19 | **~$254+** | [Amazon](https://www.amazon.com/Crucial-2x16GB-Desktop-Memory-CT2K16G4DFRA266/dp/B08C4VGJL3), [Newegg](https://www.newegg.com/crucial-32gb-ddr4-2666-cas-latency-cl19-desktop-memory/p/N82E16820156267) | 4.8/5 | Crucial's exact recommended part for your HP. But **overpriced vs DDR4-3200 options**. EOL product. |
-| 2 | **Corsair Vengeance LPX CMK32GX4M2A2666C16** | 32GB (2x16GB) | DDR4-2666 | CL16 | **~$240+** | [Amazon](https://www.amazon.com/Corsair-Vengeance-2x16GB-2666MHz-PC4-21300/dp/B0134EW44S), [Newegg](https://www.newegg.com/corsair-vengeance-lpx-32gb-ddr4-2666-cas-latency-cl16-memory-kit-black/p/N82E16820233853) | 4.8/5 | Not available at Walmart. $240+ at other retailers. **Buy the DDR4-3200 version instead (same price or cheaper).** |
-| 3 | **G.SKILL Aegis F4-2666C19D-32GIS** | 32GB (2x16GB) | DDR4-2666 | CL19 | ~$200–$270 | [Amazon](https://www.amazon.com/G-SKILL-288-Pin-Desktop-Memory-F4-2666C19D-32GIS/dp/B07LFM8117), [Newegg](https://www.newegg.com/g-skill-aegis-32gb-ddr4-2666-cas-latency-cl19-desktop-memory-black-red/p/N82E16820232765) | 4.7/5 | Check price vs DDR4-3200 Ripjaws V before buying. |
-| 4 | **A-Tech 32GB Kit** | 32GB (2x16GB) | DDR4-2666 | CL19 | ~$150–$250 | [Amazon](https://www.amazon.com/Tech-2666Mhz-PC4-21300-Computer-AT16G2D4D2666ND8N12V/dp/B07KGM61C8), [Newegg](https://www.newegg.com/a-tech-32gb-288-pin-ddr4-sdram/p/0RN-005A-00SP6) | 4.5/5 | Budget brand. Lifetime warranty. |
+### Best Pick (Updated Feb 27, 2026)
 
-### Best Value Recommendation (Updated Feb 27, 2026)
+**Corsair Vengeance LPX 32GB DDR4-3200 CL16** (~$230-$243)
 
-**Strategy: Buy DDR4-3200 CL16 — it's cheaper and auto-downclocks to 2666MHz in your HP.**
+At ~$240-250, everything costs the same. So get the **best specs for the money**:
+- **CL16** (fastest latency in this price range — Crucial is CL19/CL22)
+- **DDR4-3200** (higher spec than 2666 — reusable if you build a new PC later)
+- **4.9/5 stars**, 3,040+ reviews — the most trusted DDR4 kit on the market
+- **Lifetime warranty** from Corsair
+- Available at Best Buy, Amazon, Walmart, Newegg, and Micro Center — compare prices
 
-**Priority 1 — V-Color Skywalker Plus 32GB DDR4-3200 CL16 (~$119).** If it's in stock at Best Buy
-or Newegg, this is the best deal by far. SK Hynix ICs, CL16 timings.
-
-**Priority 2 — Corsair Vengeance LPX 32GB DDR4-3200 CL16 (~$230-$243).** The "best of the best"
-option. 4.9/5 rating with 3,040+ reviews. CL16 latency. Lifetime warranty. Available at Best Buy,
-Amazon, Newegg, Walmart, and Micro Center. This is the same Corsair quality as the DDR4-2666 version
-but often costs the same or less.
-
-**Priority 3 — KingSpec 32GB DDR4-3200 CL18 (~$85).** If you can wait for the pre-order to ship,
-this is the cheapest option. CL18 is slightly looser than CL16 but won't matter at 2666MHz.
-
-**Avoid: DDR4-2666 kits at $254+** — you get the exact same performance in your HP from a DDR4-3200
-kit that costs less.
+**Runner-up: Kingston FURY Beast DDR4-3200 CL16** — equally good, check if it's cheaper at your retailer.
 
 ### Important RAM Notes
 - Remove BOTH existing sticks (4GB + 8GB) and install the new 2x16GB kit
 - This ensures dual-channel mode for maximum bandwidth
-- **DDR4-3200 auto-downclocks to 2666MHz in your HP** — confirmed compatible, no BIOS changes needed ([source](https://forums.tomshardware.com/threads/can-you-downclock-3200mhz-ddr4-ram-to-2666mhz.3397062/))
-- DDR4-2666 is being phased out and costs MORE than DDR4-3200 in many cases
-- Check [Crucial's Compatibility Tool](https://www.crucial.com/compatible-upgrade-for/hp/pavilion-590-p0066) to verify
-- **Compare prices across Amazon, Walmart, Best Buy, Newegg, and Micro Center** — prices vary wildly between retailers
+- **DDR4-3200 auto-downclocks to 2666MHz in your HP** — no BIOS changes needed
+- All kits listed are Non-ECC UDIMM 288-pin 1.2V — compatible with your HP
+- **Compare prices across Amazon, Walmart, Best Buy, Newegg, and Micro Center** — even $10-20 savings helps
 - Check [PCPartPicker](https://pcpartpicker.com/products/memory/#S=2666,3200&Z=32768002&sort=price&page=1) to compare prices across all retailers
-- Check [CamelCamelCamel](https://camelcamelcamel.com/product/B07RW6Z692) for Amazon price alerts
+- Check [CamelCamelCamel](https://camelcamelcamel.com/product/B07RW6Z692) for Amazon price drop alerts
+- Check [eBay](https://www.ebay.com/b/PC4-21300-DDR4-2666-Bus-Speed-DIMM-Computer-Memory-RAM-32-GB-Total-Capacity/170083/bn_113555812) for possible cheaper new/open-box kits
 
 ---
 
