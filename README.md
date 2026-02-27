@@ -7,7 +7,7 @@ Structured shopping guide for upgrading an HP Pavilion Desktop 590-p0066 and fin
 | Part | Status | Price | Notes |
 |------|--------|-------|-------|
 | **NVMe SSD** | BOUGHT | $140 | MSI SPATIUM M480 PRO 1TB (Walmart) |
-| **RAM** | SHOPPING | ~$128+ | 32GB DDR4-2666 kit — see deals below |
+| **RAM** | SHOPPING | ~$119–$254 | 32GB DDR4-3200 CL16 (downclocks to 2666) — see deals below |
 
 ## Files
 
@@ -38,9 +38,12 @@ python3 search_parts.py --custom "RTX 5070 Ti 32GB"
 
 ## Top Recommendations
 
-### Upgrade Your HP Now (~$270 total)
+### Upgrade Your HP Now (~$260–$383 total)
 1. **MSI M480 PRO 1TB NVMe** — $140 (BOUGHT)
-2. **Crucial 32GB DDR4-2666 Kit** (CT2K16G4DFRA266) — ~$128 at Walmart
+2. **RAM — Buy DDR4-3200 (it auto-downclocks to 2666MHz in your HP, and is cheaper than DDR4-2666)**:
+   - Best deal: **V-Color Skywalker Plus 32GB DDR4-3200 CL16** — ~$119 (if in stock)
+   - Best of the best: **Corsair Vengeance LPX 32GB DDR4-3200 CL16** — ~$230-$243
+   - Budget: **KingSpec 32GB DDR4-3200 CL18** — ~$85 (pre-order, ships next month)
 
 ### Best New PC for AI Vibe Coding
 - **Budget ($850–$1,100)**: CyberPowerPC Gamer Xtreme at Costco
