@@ -1,4 +1,4 @@
-# Computer Parts Shopping Guide — February 2026
+# Computer Parts Shopping Guide — March 2026
 
 > **Market Alert**: NAND flash and DRAM prices have surged dramatically in 2026 due to AI datacenter demand.
 > Phison CEO confirmed NAND prices have more than doubled; all 2026 production is sold out.
@@ -15,19 +15,19 @@ Your HP supports PCIe 3.0 x4 NVMe. The M480 PRO will run at Gen 3 speeds (~3,500
 
 ### Other SSDs Considered (for reference)
 
-| # | Product | Capacity | Interface | Read Speed | Est. Price (Feb 2026) | Retailer | Rating | Notes |
+| # | Product | Capacity | Interface | Read Speed | Est. Price (Mar 2026) | Retailer | Rating | Notes |
 |---|---------|----------|-----------|------------|----------------------|----------|--------|-------|
-| 1 | **Samsung 990 EVO** | 1TB | PCIe 4.0 x4 | 5,000 MB/s | ~$100–$120 | [Amazon](https://www.amazon.com/s?k=samsung+990+evo+1tb), [Newegg](https://www.newegg.com) | 4.7/5 | Budget Samsung option, excellent reliability |
-| 2 | **WD Blue SN580** | 1TB | PCIe 4.0 x4 | 4,150 MB/s | ~$90–$130 | [Amazon](https://www.amazon.com/Western-Digital-SN580-Internal-Solid/dp/B0C8XMH264), [Best Buy](https://www.bestbuy.com/product/wd-blue-sn580-1tb-internal-ssd-pcie-gen-4-x4-nvme/JXJ62CRCX6), [Newegg](https://www.newegg.com/western-digital-1tb-wd-blue-sn580-nvme-1-4/p/N82E16820250254) | 4.7/5 | Great budget pick, DRAM-less but fast HMB |
-| 3 | **Crucial P3** | 1TB | PCIe 3.0 x4 | 3,500 MB/s | ~$80–$180 | [Amazon](https://www.amazon.com/Crucial-PCIe-NAND-NVMe-3500MB/dp/B0B25LZGGW), [Best Buy](https://www.bestbuy.com/product/crucial-p3-1tb-internal-ssd-pcie-gen-3-x4-nvme/JX8PSK7ZJ4), [Micro Center](https://www.microcenter.com/product/650162/) | 4.6/5 | Native Gen 3 — no wasted bandwidth |
-| 4 | **Crucial P310** | 1TB | PCIe 4.0 x4 | 7,100 MB/s | ~$130 | [Amazon](https://www.amazon.com/s?k=crucial+p310+1tb) | 4.5/5 | Newer model, runs at Gen 3 speeds in your PC |
-| 5 | **Samsung 990 Pro** | 1TB | PCIe 4.0 x4 | 7,450 MB/s | ~$120 | [Amazon](https://www.amazon.com/SAMSUNG-Internal-Expansion-MZ-V9P1T0B-AM/dp/B0BHJF2VRN), [Newegg](https://www.newegg.com/samsung-1tb-990-pro-nvme-2-0/p/N82E16820147860) | 4.8/5 | Premium pick, top-tier reliability |
-| 6 | **Samsung 990 Pro** | 2TB | PCIe 4.0 x4 | 7,450 MB/s | ~$400 | [Amazon](https://www.amazon.com/SAMSUNG-Internal-Expansion-MZ-V9P2T0B-AM/dp/B0BHJJ9Y77), [Best Buy](https://www.bestbuy.com/product/samsung-990-pro-2tb-internal-ssd-pcle-gen-4x4-nvme/J3ZYG28J3S) | 4.8/5 | Best 2TB option but prices have surged |
-| 7 | **WD_BLACK SN850X** | 2TB | PCIe 4.0 x4 | 7,300 MB/s | ~$199 (deal) | [Amazon](https://www.amazon.com/s?k=wd+black+sn850x+2tb), [Newegg](https://www.newegg.com) | 4.8/5 | Best value 2TB if you catch the deal |
-| 8 | **Crucial P3 Plus** | 1TB | PCIe 4.0 x4 | 5,000 MB/s | ~$100–$150 | [Amazon](https://www.amazon.com/Crucial-Plus-PCIe-NAND-5000MB/dp/B0B25NXWC7), [Newegg](https://www.newegg.com/crucial-1tb-p3-plus-nvme/p/N82E16820156300), [Micro Center](https://www.microcenter.com/product/650166/) | 4.6/5 | Gen 4 upgrade from P3, still affordable |
+| 1 | **Samsung 990 EVO** | 1TB | PCIe 4.0 x4 | 5,000 MB/s | **~$80** | [Amazon](https://www.amazon.com/s?k=samsung+990+evo+1tb), [Newegg](https://www.newegg.com) | 4.7/5 | Being replaced by 990 EVO Plus — relatively cheap. Good Samsung reliability |
+| 2 | **WD Blue SN580** | 1TB | PCIe 4.0 x4 | 4,150 MB/s | **~$149** | [Amazon](https://www.amazon.com/Western-Digital-SN580-Internal-Solid/dp/B0C8XMH264), [Best Buy](https://www.bestbuy.com/product/wd-blue-sn580-1tb-internal-ssd-pcie-gen-4-x4-nvme/JXJ62CRCX6), [Newegg](https://www.newegg.com/western-digital-1tb-wd-blue-sn580-nvme-1-4/p/N82E16820250254) | 4.7/5 | Price surged 122% above historical avg due to shortage |
+| 3 | **Crucial P3** | 1TB | PCIe 3.0 x4 | 3,500 MB/s | **~$60** | [Amazon](https://www.amazon.com/Crucial-PCIe-NAND-NVMe-3500MB/dp/B0B25LZGGW), [Best Buy](https://www.bestbuy.com/product/crucial-p3-1tb-internal-ssd-pcie-gen-3-x4-nvme/JX8PSK7ZJ4), [Micro Center](https://www.microcenter.com/product/650162/) | 4.6/5 | **CHEAPEST 1TB** — Gen 3 = less demand pressure. Perfect for your HP's Gen 3 slot |
+| 4 | **Crucial P310** | 1TB | PCIe 4.0 x4 | 7,100 MB/s | **~$107–$109** | [Amazon](https://www.amazon.com/s?k=crucial+p310+1tb) | 4.5/5 | Good mid-range, sometimes on sale for ~$80 at Crucial direct |
+| 5 | **Samsung 990 Pro** | 1TB | PCIe 4.0 x4 | 7,450 MB/s | **~$190–$200** | [Amazon](https://www.amazon.com/SAMSUNG-Internal-Expansion-MZ-V9P1T0B-AM/dp/B0BHJF2VRN), [Newegg](https://www.newegg.com/samsung-1tb-990-pro-nvme-2-0/p/N82E16820147860) | 4.8/5 | Premium but price nearly doubled — often out of stock on Amazon |
+| 6 | **Samsung 990 Pro** | 2TB | PCIe 4.0 x4 | 7,450 MB/s | **~$400** | [Amazon](https://www.amazon.com/SAMSUNG-Internal-Expansion-MZ-V9P2T0B-AM/dp/B0BHJJ9Y77), [Best Buy](https://www.bestbuy.com/product/samsung-990-pro-2tb-internal-ssd-pcle-gen-4x4-nvme/J3ZYG28J3S) | 4.8/5 | Hit $720 in Jan 2026 — volatile. Was $85 at Black Friday 2025 |
+| 7 | **WD_BLACK SN850X** | 2TB | PCIe 4.0 x4 | 7,300 MB/s | **~$178–$429** | [Amazon](https://www.amazon.com/s?k=wd+black+sn850x+2tb), [Newegg](https://www.newegg.com) | 4.8/5 | $178 no heatsink, $429 with heatsink. Prices wildly volatile |
+| 8 | **Crucial P3 Plus** | 1TB | PCIe 4.0 x4 | 5,000 MB/s | **~$90** | [Amazon](https://www.amazon.com/Crucial-Plus-PCIe-NAND-5000MB/dp/B0B25NXWC7), [Newegg](https://www.newegg.com/crucial-1tb-p3-plus-nvme/p/N82E16820156300), [Micro Center](https://www.microcenter.com/product/650166/) | 4.6/5 | Up 45% in 90 days and still rising |
 
-### Best Value Recommendation for Your HP
-**Samsung 990 EVO 1TB or WD Blue SN580 1TB** — Best price-to-performance. Your HP's PCIe 3.0 slot will cap all drives at ~3,500 MB/s anyway, so don't overspend on Gen 5 speeds you can't use.
+### Best Value Recommendation for Your HP (March 2026)
+**Crucial P3 1TB (~$60) or Samsung 990 EVO 1TB (~$80)** — Your HP's PCIe 3.0 slot caps all drives at ~3,500 MB/s anyway. The Crucial P3 is now the best value because Gen 3 drives face less demand pressure from AI/enterprise buyers. The WD Blue SN580 has surged to ~$149 and is no longer a good deal.
 
 ### Price Tracker
 Check [Tom's Hardware SSD Price Tracker](https://www.tomshardware.com/pc-components/ssds/ssd-price-tracking-2026-lowest-price-on-every-m-2-ssd) and [Slickdeals SSD Deals](https://slickdeals.net/deals/ssd/) daily for flash sales.
@@ -36,7 +36,7 @@ Check [Tom's Hardware SSD Price Tracker](https://www.tomshardware.com/pc-compone
 
 ## PART 2: 32GB RAM for HP Pavilion 590-p0066
 
-> **DRAM Price Crisis (Updated Feb 27, 2026):** DDR4 32GB kits that sold for $60-$90 in October 2025
+> **DRAM Price Crisis (Updated March 2, 2026):** DDR4 32GB kits that sold for $60-$90 in October 2025
 > now cost **~$240-$260** across the board — regardless of brand or speed — due to AI-driven DRAM
 > shortages. Samsung and other manufacturers are exiting DDR4 production, shifting to HBM for AI GPUs.
 > Shortages expected through Q4 2027. **Buy now — prices will keep rising.**
@@ -50,35 +50,38 @@ Check [Tom's Hardware SSD Price Tracker](https://www.tomshardware.com/pc-compone
 
 Your HP's Intel H370 motherboard maxes out at DDR4-2666. But DDR4-3200 sticks **automatically downclock
 to 2666MHz** — no BIOS changes needed ([source](https://forums.tomshardware.com/threads/can-you-downclock-3200mhz-ddr4-ram-to-2666mhz.3397062/)).
-Since everything costs ~$240-250 anyway, **buy DDR4-3200 CL16** — you get a higher-spec product for the same money,
-and if you ever move the RAM to a newer PC, it'll run at full 3200MHz speed.
+CL16 kits cost $230-$300+ while CL22/CL19 kits cost $82-$139. For your HP, CL22 is perfectly fine.
+**If budget is tight, get Crucial DDR4-3200 CL22 (~$139).** If you want the best latency for reuse in a future PC, get Corsair DDR4-3200 CL16 (~$230-$243).
 
-### 32GB (2x16GB) DDR4 Kits — All ~$240-$260 (Real Feb 2026 Prices)
+### 32GB (2x16GB) DDR4 Kits — Real March 2026 Prices
 
-Since prices have converged, **pick the best quality at whatever price you find.**
+> **Key finding:** CL16 kits (faster) cost $230-$300+. CL22/CL19 kits (slower but fine for your HP) cost $82-$139.
+> For your HP Pavilion, even CL22 RAM is a massive upgrade over your current mismatched 12GB setup.
 
 | # | Product | Speed | CAS Latency | Price Range | Where to Buy | Rating | Why Consider |
 |---|---------|-------|-------------|-------------|-------------|--------|-------------|
-| 1 | **Corsair Vengeance LPX CMK32GX4M2E3200C16** | DDR4-3200 | **CL16** | ~$230–$263 | [Amazon](https://www.amazon.com/Corsair-VENGEANCE-3200MHz-Compatible-Computer/dp/B07RW6Z692), [Best Buy](https://www.bestbuy.com/product/corsair-vengeance-lpx-32gb-2x16gb-ddr4-3200mhz-c16-udimm-desktop-memory-black/J39QHH5FH5), [Newegg](https://www.newegg.com/corsair-vengeance-lpx-32gb-ddr4-3200-cas-latency-cl16-desktop-memory-black/p/N82E16820236541), [Walmart](https://www.walmart.com/ip/CORSAIR-Vengeance-LPX-32GB-2-x-16GB-288-Pin-PC-RAM-DDR4-3200-PC4-25600-Desktop-Memory-Model-CMK32GX4M2E3200C16/147004867), [Micro Center](https://www.microcenter.com/product/616299/) | 4.9/5 (3,040 reviews) | **BEST PICK** — CL16, premium quality, lifetime warranty, 3,040+ reviews. Best Buy ~$243. |
-| 2 | **Kingston FURY Beast KF432C16BBK2/32** | DDR4-3200 | **CL16** | ~$240–$260 | [Amazon](https://www.amazon.com/s?k=Kingston+FURY+Beast+32GB+DDR4+3200), [Walmart](https://www.walmart.com/ip/Kingston-FURY-Beast-32GB-2-x-16GB-288-Pin-PC-RAM-DDR4-3200-PC4-25600-Memory-Desktop-Memory-Model-KF432C16BBK2-32/202148232), [Newegg](https://www.newegg.com/p/pl?d=kingston+fury+beast+32gb+ddr4+3200) | 4.8/5 | Kingston reliability, XMP-ready, low-profile heatspreader. |
-| 3 | **G.Skill Ripjaws V F4-3200C16D-32GVK** | DDR4-3200 | **CL16** | ~$240–$270 | [Amazon](https://www.amazon.com/G-SKILL-Ripjaws-PC4-25600-3200MHz-F4-3200C16S-32GVK/dp/B082NX637D), [Newegg](https://www.newegg.com/g-skill-ripjaws-v-series-16gb-ddr4-3200-cas-latency-cl16-desktop-memory-black/p/N82E16820231941) | 4.8/5 | Premium G.Skill, 8,000+ reviews on Newegg. |
-| 4 | **Crucial CT2K16G4DFRA32A** | DDR4-3200 | CL22 | ~$240–$260 | [Amazon](https://www.amazon.com/Crucial-2x16GB-Desktop-Memory-CT2K16G4DFRA32A/dp/B08C56KXQJ), [Walmart](https://www.walmart.com/ip/Crucial-32GB-2-x-16GB-288-Pin-PC-RAM-DDR4-3200-PC4-25600-Desktop-Memory-Model-CT2K16G4DFRA32A/948970250) | 4.8/5 | Micron's own brand. Guaranteed HP compatible. CL22 is looser than CL16. |
-| 5 | **Team T-FORCE VULCAN Z** | DDR4-3200 | **CL16** | ~$240–$260 | [Walmart](https://www.walmart.com/ip/Team-T-FORCE-VULCAN-Z-32GB-2-x-16GB-288-Pin-PC-RAM-DDR4-3200-PC4-25600-Desktop-Memory-Model-TLZGD432G3200HC16FDC01/369911416), [Newegg](https://www.newegg.com/p/pl?d=team+vulcan+z+32gb+ddr4+3200) | 4.7/5 | Solid mid-tier option with heatspreader. |
-| 6 | **Corsair Vengeance LPX CMK32GX4M2A2666C16** | DDR4-2666 | CL16 | ~$240+ | [Amazon](https://www.amazon.com/Corsair-Vengeance-2x16GB-2666MHz-PC4-21300/dp/B0134EW44S), [Newegg](https://www.newegg.com/corsair-vengeance-lpx-32gb-ddr4-2666-cas-latency-cl16-memory-kit-black/p/N82E16820233853) | 4.8/5 | Same price as DDR4-3200 version — **buy the 3200 instead.** |
-| 7 | **Crucial CT2K16G4DFRA266** | DDR4-2666 | CL19 | ~$254+ | [Amazon](https://www.amazon.com/Crucial-2x16GB-Desktop-Memory-CT2K16G4DFRA266/dp/B08C4VGJL3), [Newegg](https://www.newegg.com/crucial-32gb-ddr4-2666-cas-latency-cl19-desktop-memory/p/N82E16820156267) | 4.8/5 | Crucial's recommended part for your HP. But CL19 and same price as better CL16 kits. |
+| 1 | **Crucial CT2K16G4DFRA32A** | DDR4-3200 | CL22 | **~$139** | [Amazon](https://www.amazon.com/Crucial-2x16GB-Desktop-Memory-CT2K16G4DFRA32A/dp/B08C56KXQJ), [Walmart](https://www.walmart.com/ip/Crucial-32GB-2-x-16GB-288-Pin-PC-RAM-DDR4-3200-PC4-25600-Desktop-Memory-Model-CT2K16G4DFRA32A/948970250) | 4.8/5 | **BEST VALUE** — Half the price of CL16 kits. CL22 is fine for your HP. Micron brand, guaranteed compatible. |
+| 2 | **Crucial CT2K16G4DFRA266** | DDR4-2666 | CL19 | **~$82** (rising fast) | [Amazon](https://www.amazon.com/Crucial-2x16GB-Desktop-Memory-CT2K16G4DFRA266/dp/B08C4VGJL3), [Newegg](https://www.newegg.com/crucial-32gb-ddr4-2666-cas-latency-cl19-desktop-memory/p/N82E16820156267) | 4.8/5 | **CHEAPEST** — Crucial's exact HP-compatible part. But price rose 102% in 30 days. May be higher by the time you read this. |
+| 3 | **Corsair Vengeance LPX CMK32GX4M2E3200C16** | DDR4-3200 | **CL16** | **~$230–$243** | [Amazon](https://www.amazon.com/Corsair-VENGEANCE-3200MHz-Compatible-Computer/dp/B07RW6Z692), [Best Buy](https://www.bestbuy.com/product/corsair-vengeance-lpx-32gb-2x16gb-ddr4-3200mhz-c16-udimm-desktop-memory-black/J39QHH5FH5), [Newegg](https://www.newegg.com/corsair-vengeance-lpx-32gb-ddr4-3200-cas-latency-cl16-desktop-memory-black/p/N82E16820236541), [Walmart](https://www.walmart.com/ip/CORSAIR-Vengeance-LPX-32GB-2-x-16GB-288-Pin-PC-RAM-DDR4-3200-PC4-25600-Desktop-Memory-Model-CMK32GX4M2E3200C16/147004867), [Micro Center](https://www.microcenter.com/product/616299/) | 4.9/5 (3,040 reviews) | **BEST CL16 PICK** — Fastest latency, lifetime warranty, 3,040+ reviews. Best Buy ~$243. |
+| 4 | **G.Skill Ripjaws V F4-3200C16D-32GVK** | DDR4-3200 | **CL16** | **~$270–$297** | [Amazon](https://www.amazon.com/G-SKILL-Ripjaws-PC4-25600-3200MHz-F4-3200C16S-32GVK/dp/B082NX637D), [Newegg](https://www.newegg.com/g-skill-ripjaws-v-series-16gb-ddr4-3200-cas-latency-cl16-desktop-memory-black/p/N82E16820231941) | 4.8/5 | Premium G.Skill, 8,000+ reviews on Newegg. |
+| 5 | **Team T-FORCE VULCAN Z** | DDR4-3200 | **CL16** | **~$275** | [Walmart](https://www.walmart.com/ip/Team-T-FORCE-VULCAN-Z-32GB-2-x-16GB-288-Pin-PC-RAM-DDR4-3200-PC4-25600-Desktop-Memory-Model-TLZGD432G3200HC16FDC01/369911416), [Newegg](https://www.newegg.com/p/pl?d=team+vulcan+z+32gb+ddr4+3200) | 4.7/5 | Solid mid-tier with heatspreader. |
+| 6 | **Kingston FURY Beast KF432C16BBK2/32** | DDR4-3200 | **CL16** | **~$303** | [Amazon](https://www.amazon.com/s?k=Kingston+FURY+Beast+32GB+DDR4+3200), [Walmart](https://www.walmart.com/ip/Kingston-FURY-Beast-32GB-2-x-16GB-288-Pin-PC-RAM-DDR4-3200-PC4-25600-Memory-Desktop-Memory-Model-KF432C16BBK2-32/202148232), [Newegg](https://www.newegg.com/p/pl?d=kingston+fury+beast+32gb+ddr4+3200) | 4.8/5 | Kingston reliability, XMP-ready. But most expensive CL16 kit. |
+| 7 | **Corsair Vengeance LPX CMK32GX4M2A2666C16** | DDR4-2666 | CL16 | **~$180–$230** | [Amazon](https://www.amazon.com/Corsair-Vengeance-2x16GB-2666MHz-PC4-21300/dp/B0134EW44S), [Newegg](https://www.newegg.com/corsair-vengeance-lpx-32gb-ddr4-2666-cas-latency-cl16-memory-kit-black/p/N82E16820233853) | 4.8/5 | DDR4-3200 CL16 version is only slightly more — buy the 3200 instead. |
 
-### Best Pick (Updated Feb 27, 2026)
+### Best Picks (Updated March 2, 2026)
 
-**Corsair Vengeance LPX 32GB DDR4-3200 CL16** (~$230-$243)
+**Budget Pick: Crucial 32GB DDR4-3200 CL22** (~$139)
+- Half the price of CL16 kits — the CL22 latency difference is **unnoticeable for your HP's workload**
+- Micron's own brand, guaranteed HP Pavilion compatible
+- DDR4-3200 auto-downclocks to 2666MHz in your HP
+- Best value if you're upgrading the HP and plan to buy a new PC later anyway
 
-At ~$240-250, everything costs the same. So get the **best specs for the money**:
-- **CL16** (fastest latency in this price range — Crucial is CL19/CL22)
-- **DDR4-3200** (higher spec than 2666 — reusable if you build a new PC later)
-- **4.9/5 stars**, 3,040+ reviews — the most trusted DDR4 kit on the market
-- **Lifetime warranty** from Corsair
-- Available at Best Buy, Amazon, Walmart, Newegg, and Micro Center — compare prices
+**Performance Pick: Corsair Vengeance LPX 32GB DDR4-3200 CL16** (~$230-$243)
+- **CL16** is faster than CL22 — matters more if you reuse the RAM in a newer PC
+- **4.9/5 stars**, 3,040+ reviews, lifetime warranty from Corsair
+- Available at Best Buy (~$243), Amazon, Walmart, Newegg, Micro Center
 
-**Runner-up: Kingston FURY Beast DDR4-3200 CL16** — equally good, check if it's cheaper at your retailer.
+**Avoid:** Kingston FURY Beast at ~$303 — same CL16 performance as Corsair for $60+ more.
 
 ### Important RAM Notes
 - Remove BOTH existing sticks (4GB + 8GB) and install the new 2x16GB kit
